@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Elefante Azzurro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff; /* Sfondo bianco */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Nasconde eventuali overflow */
+            position: relative; /* Necessario per il posizionamento assoluto */
+        }
+        h1 {
+            font-size: 50px;
+            color: #007bff; /* Testo blu */
+        }
+        .video {
+            display: none; /* Nasconde il video inizialmente */
+            margin-top: 20px;
+        }
+        .elefante {
+            position: absolute;
+            width: 100px; /* Dimensione maggiore dell'elefante */
+            height: auto;
+        }
+        .top-left {
+            top: 20px;
+            left: 20px;
+        }
+        .top-right {
+            top: 20px;
+            right: 20px;
+        }
+        .bottom-left {
+            bottom: 20px;
+            left: 20px;
+        }
+        .bottom-right {
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elefante Azzurro</h1>
+    
+    <!-- Aggiungi l'iframe del video YouTube con il parametro start e end -->
+    <iframe id="video" class="video" width="560" height="315" 
+    src="https://www.youtube.com/embed/h6D59z13f5Y?start=200&end=205" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <!-- Aggiungi gli elefanti in ogni angolo -->
+    <img src="elefante-piccolo.png" class="elefante top-left" alt="Elefante Azzurro">
+    <img src="elefante-piccolo.png" class="elefante top-right" alt="Elefante Azzurro">
+    <img src="elefante-piccolo.png" class="elefante bottom-left" alt="Elefante Azzurro">
+    <img src="elefante-piccolo.png" class="elefante bottom-right" alt="Elefante Azzurro">
+
+    <script>
+        // Usa JavaScript per mostrare il video dopo 2 secondi
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('video').style.display = 'block';
+            }, 2000); // Mostra il video dopo 2 secondi
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Domanda o Risposta?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff; /* Sfondo bianco */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 30px;
+            color: #007bff; /* Colore blu per la domanda */
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+        .box {
+            padding: 20px 40px;
+            background-color: #ffc0cb; /* Rettangoli rosa */
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .box:hover {
+            transform: scale(1.1); /* Ingrandisce leggermente al passaggio del mouse */
+        }
+        .box p {
+            font-size: 20px;
+            color: #008000; /* Testo verde */
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cosa è più importante: la domanda o la risposta?</h1>
+    
+    <div class="container">
+        <!-- Opzione 1: Pensieri -->
+        <div class="box">
+            <p>Pensieri</p>
+        </div>
+        
+        <!-- Opzione 2: Idee (collega alla seconda pagina) -->
+        <a href="elefante.html">
+            <div class="box">
+                <p>Idee</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
